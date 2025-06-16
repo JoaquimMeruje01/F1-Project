@@ -1,77 +1,51 @@
-# F1 Project
+# F1 Project 🏎️
 
-Welcome to **F1 Project**, a **Data Science and Machine Learning application** designed to analyze and predict insightful, cool, and fresh information about **Formula 1**!  
-Here, you'll find **interactive visualizations**, **predictive models**, and **fascinating statistics** about the most iconic **drivers**, **teams**, **circuits**, and **race statuses** in F1 history.
+Welcome to **F1 Project**, a Data Science and Machine Learning Project, developed to analyse and predict cool and fresh information about Formula 1!  
+Here, you'll find interactive visualisations, predictive models, and fascinating statistics about F1's most iconic drivers, teams, circuits, and even races status.
 
-![F1 Logo](Images/logo.jpg)
+![Logo](Images/logo.jpg)
 
 ---
 
 ## 🎯 Project Goals
 
-This project was developed with the following goals:
-
-- 📊 **Analyze historical data** from races and driver classifications across seasons  
-- 👨‍💻 **Visualize statistics** interactively about drivers, teams, circuits, and race statuses  
-- 🔍 **Identify trends** and performance patterns across teams and drivers  
-- 🤖 **Build Machine Learning models** to predict:
-  - Race winners  
-  - DNFs (Did Not Finish)  
-  - Potential team changes for upcoming seasons  
+- 📊 Analyse historical data from races and classifications from different drivers and seasons  
+- 📈 Visualise statistics intuitively and interactively about drivers, teams, circuits and races status  
+- 🤖 Build Machine Learning models to predict race winners, DNFs and team changes for next seasons
 
 ---
 
-## 🗺️ App Structure
+## 🗂️ Streamlit App Structure
 
-The Streamlit web app is divided into the following pages:
-
-1. **Homepage**  
-   Overview of the project, its purpose, and the technologies used.
-
-2. **Drivers and Teams**  
-   Explore statistics, performances, and trends among drivers and constructors.
-
-3. **Circuits**  
-   Discover historical data and key insights for each Grand Prix circuit.
-
-4. **Races Status**  
-   Analyze DNFs, car issues, and reliability problems over the years.
-
-5. **ML Predictions**  
-   Use machine learning models to predict race outcomes, DNFs, and driver/team changes.
+1. 🏁 **Homepage**: Project overview, goals, and technologies used to develop the project  
+2. 👨‍👩‍👧‍👦 **Drivers and Teams**: Statistics, performances, and trends among drivers and constructors  
+3. 🏟️ **Circuits**: Historical data and key insights for each Grand Prix circuit  
+4. ⚠️ **Races Status**: Statistics and visualisations about DNFs and car problems over the seasons  
+5. 🤖 **ML Predictions**: Machine Learning models to predict race outcomes, DNFs, and team changes
 
 ---
 
-## 🧰 Tech Stack
+## 🛠️ Technologies Used
 
-This project was developed using:
+This project was developed with:
 
-- **Python**
-- **Streamlit** (for the interactive web app)
-- **Pandas**, **NumPy** (data manipulation)
-- **Seaborn**, **Plotly** (visualizations)
-- **Scikit-learn** (machine learning)
+- 🐍 Python  
+- 🧪 Streamlit framework  
+- 📚 Libraries: `NumPy`, `Pandas`, `Seaborn`, `Plotly`, `Scikit-learn`
 
 ---
 
-## 📦 Data Sources
+## 📂 Data Sources
 
-- **Kaggle Dataset**: [Formula 1 World Championship (1950–2020)](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)  
-- **Wikipedia pages** for additional race and driver stats
+- 📊 Real-world datasets from Kaggle  
+- 🌐 Wikipedia pages  
 
----
-
-## 🔗 GitHub Repository
-
-All code and updates can be found in this repository. Feel free to explore, fork, or contribute!
+**Kaggle Source**: [Formula 1 World Championship (1950–2020)](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
 
 ---
 
-## 🏁 Final Note
+Start the engine, open the charts and enjoy the science behind the speed! 🏁📈
 
-Start the engine, open the charts, and enjoy the science behind the speed!  
-
----
 
 
 
