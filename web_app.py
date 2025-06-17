@@ -20,7 +20,7 @@ class Multiapp:
             "function": function   
         })
 
-    def run():
+    def run(self):
         with st.sidebar:
             app = option_menu(
                 menu_title='F1 Project',
@@ -29,21 +29,24 @@ class Multiapp:
                 icons=['house-fill', 'bi bi-stoplights', 'bi bi-stopwatch-fill', 'bi bi-tools', 'bi bi-cpu'],
                 default_index=0,
                 styles={
-                    "container": {"padding": "5!important","background-color":'#15151D'},
+                    "container": {"padding": "5!important", "background-color": '#15151D'},
                     "icon": {"color": "#FFFFFF", "font-size": "20px"}, 
                     "nav-link": {"color":"#FFFFFF","font-size": "17px", "text-align": "left", "margin":"0px", "--hover-color": "#CE2D1E"},
-                    "nav-link-selected": {"background-color": "#CE2D1E"}}
+                    "nav-link-selected": {"background-color": "#CE2D1E"}
+                }
             ) 
 
         if app == "Homepage":
             homepage.app()
-        if app == "Drivers and Teams":
+        elif app == "Drivers and Teams":
             drivers_teams.app()
-        if app == "Circuits":
+        elif app == "Circuits":
             circuits.app()    
-        if app == "Races Status":
+        elif app == "Races Status":
             race_status.app()    
-        if app == "ML Predictions":
-            predictions.app()      
+        elif app == "ML Predictions":
+            predictions.app()
 
-    run()    
+app = Multiapp()
+app.run()
+
