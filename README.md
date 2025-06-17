@@ -5,7 +5,7 @@ Here, you'll find interactive visualisations, predictive models, and fascinating
 
 To explore the full web application, just click the link below:
 
-👉 ([https://your-app-link-here](https://f1-project-joaquim-meruje.streamlit.app/))
+👉 ([F1-Project-Joaquim_Meruje](https://f1-project-joaquim-meruje.streamlit.app/))
 
 ![Logo](Images/logo.jpg)
 
