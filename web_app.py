@@ -6,7 +6,7 @@
 
 import streamlit as st
 from streamlit_option_menu import option_menu
-import drivers_teams, race_status, homepage, circuits, ML_predictions
+import drivers_teams, race_status, homepage, circuits, predictions
 
 st.set_page_config(page_title="F1 Analysis and Prediction Project")
 
@@ -44,6 +44,6 @@ class Multiapp:
         if app == "Races Status":
             race_status.app()    
         if app == "ML Predictions":
-            ML_predictions.app()      
+            predictions.app()      
 
     run()    
