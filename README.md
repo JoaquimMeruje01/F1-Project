@@ -5,7 +5,7 @@ Here, you'll find interactive visualisations, predictive models, and fascinating
 
 To explore the full web application, just click the link below:
 
-👉 [**Launch the F1 Analysis and Prediction App**]([https://your-app-link-here](https://f1-project-joaquim-meruje.streamlit.app/))
+👉 ([https://your-app-link-here](https://f1-project-joaquim-meruje.streamlit.app/))
 
 ![Logo](Images/logo.jpg)
 
