@@ -40,7 +40,7 @@ def drivers_problems():
 
         st.markdown("##### Top 10 Drivers with more DNFs")
 
-        df_moreDNFs = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\race_counts.csv")
+        df_moreDNFs = pd.read_csv("dataframes/race_counts.csv")
         df_moreDNFs = df_moreDNFs[(df_moreDNFs['Total Races'] > min_total_races) & (df_moreDNFs['Total Races'] < max_total_races)]
         df_moreDNFs = df_moreDNFs.drop(columns=['Finished Races (%)','Total Health', 'Total + Laps'])
         df_moreDNFs = df_moreDNFs.sort_values(by=['Total DNFs','Total Races'], ascending=False).head(10)
@@ -50,7 +50,7 @@ def drivers_problems():
 
         st.markdown("##### Top 10 Drivers with more + Laps")
 
-        df_moreLaps = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\race_counts.csv")
+        df_moreLaps = pd.read_csv("dataframes/race_counts.csv")
         df_moreLaps = df_moreLaps[(df_moreLaps['Total Races'] > min_total_races) & (df_moreLaps['Total Races'] < max_total_races)]
         df_moreLaps = df_moreLaps.drop(columns=['Finished Races (%)','Total Health', 'Total DNFs'])
         df_moreLaps = df_moreLaps.sort_values(by=['Total + Laps','Total Races'], ascending=False).head(10)
@@ -62,7 +62,7 @@ def drivers_problems():
 
         st.markdown("##### Top 10 Drivers with more Finished Races")
 
-        df_moreDNFs = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\race_counts.csv")
+        df_moreDNFs = pd.read_csv("dataframes/race_counts.csv")
         df_moreDNFs = df_moreDNFs[(df_moreDNFs['Total Races'] > min_total_races) & (df_moreDNFs['Total Races'] < max_total_races)]
         df_moreDNFs = df_moreDNFs.drop(columns=['Total Health', 'Total DNFs', 'Total + Laps'])
         df_moreDNFs = df_moreDNFs.sort_values(by=['Finished Races (%)','Total Races'], ascending=False).head(10)
@@ -73,7 +73,7 @@ def drivers_problems():
 
         st.markdown("##### Top 10 Drivers with more Health Issues")
 
-        df_health = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\race_counts.csv")
+        df_health = pd.read_csv("dataframes/race_counts.csv")
         df_health = df_health[(df_health['Total Races'] > min_total_races) & (df_health['Total Races'] < max_total_races)]
         df_health = df_health.drop(columns=['Finished Races (%)', 'Total DNFs', 'Total + Laps'])
         df_health = df_health.sort_values(by=['Total Health','Total Races'], ascending=False).head(10)
@@ -85,7 +85,7 @@ def drivers_problems():
 
 def years_problems():
 
-        df_problems_years = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\race_problems_years.csv")
+        df_problems_years = pd.read_csv("dataframes/race_problems_years.csv")
 
         st.markdown("### Problems Evolution over the years")
 
@@ -110,7 +110,7 @@ def teams_problems():
       
       st.markdown("### Teams Status Races")
 
-      df_team_status = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\teams_status.csv")
+      df_team_status = pd.read_csv("dataframes/teams_status.csv")
 
       col1, col2 = st.columns([0.5, 0.5])
 
@@ -164,7 +164,7 @@ def teams_problems():
 
         st.markdown("##### Points lost from the starting grid with a DNF")
 
-        df_points_lost = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\teams_points_lost.csv")
+        df_points_lost = pd.read_csv("dataframes/teams_points_lost.csv")
         df_points_lost = create_team_dataframe(team_selected, df_points_lost)
         df_points_lost = df_points_lost[(df_points_lost['year'] >= start) & (df_points_lost['year'] <= end)]  
         drivers_races = df_points_lost.groupby("Name").size()
