@@ -19,7 +19,7 @@ def init_stats_circuits():
 
     st.markdown("### Circuits Statistics")
 
-    df_final_circuits = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\circuits_final.csv")
+    df_final_circuits = pd.read_csv("dataframes/circuits_final.csv")
     col1, col2 = st.columns([0.5, 0.5])
 
     with col1:
@@ -55,7 +55,7 @@ def drivers_teams_performance_circuits():
 
      st.markdown("### Drivers and Teams Performance in Circuits")
 
-     results_by_circuit = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\results_by_circuit.csv ") 
+     results_by_circuit = pd.read_csv("dataframes/results_by_circuit.csv ") 
      col1, col2 = st.columns([0.4, 0.4])
 
      with col1:
