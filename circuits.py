@@ -8,7 +8,7 @@ def app():
 
     st.title("Circuits")
 
-    st.write("In Drivers and Teams you can discover more about your favourite drivers and teams. Since simple stats about championships, number of points or wins, until more complex statistics over the years.")
+    st.write("In Circuits you can discover detailed information about the world’s most iconic racing circuits, from track lap records to historical winners.")
 
     init_stats_circuits()
     give_spacing(2)
