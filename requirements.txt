@@ -9,4 +9,4 @@ torch
 torchvision
 torchaudio
 rich
-streamlit-option-menu
+streamlit-option-menu==0.3.12
