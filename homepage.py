@@ -15,7 +15,7 @@ def app():
               about F1's most iconic drivers, teams, circuits and even race statuses.")
     
     image = Image.open("Images/logo.jpg")
-    st.image(image, use_column_width=True, width=200)
+    st.image(image, width=200)
 
     st.write("The main goals of this project include analyse historical data from races, classifications from different drivers and seasons;\
               analyse historical data from races and classifications from different drivers and seasons; visualise statistics intuitively and\
