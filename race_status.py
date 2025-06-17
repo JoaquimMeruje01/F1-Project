@@ -38,7 +38,7 @@ def drivers_problems():
 
     with col1:
 
-        st.markdown("##### Top 10 Drivers with more DNFs")
+        st.markdown("##### Top 10 Drivers - More DNFs")
 
         df_moreDNFs = pd.read_csv("dataframes/race_counts.csv")
         df_moreDNFs = df_moreDNFs[(df_moreDNFs['Total Races'] > min_total_races) & (df_moreDNFs['Total Races'] < max_total_races)]
@@ -48,7 +48,7 @@ def drivers_problems():
         df_moreDNFs.index = range(1, len(df_moreDNFs) + 1)
         st.dataframe(df_moreDNFs)    
 
-        st.markdown("##### Top 10 Drivers with more + Laps")
+        st.markdown("##### Top 10 Drivers - More + Laps")
 
         df_moreLaps = pd.read_csv("dataframes/race_counts.csv")
         df_moreLaps = df_moreLaps[(df_moreLaps['Total Races'] > min_total_races) & (df_moreLaps['Total Races'] < max_total_races)]
@@ -60,7 +60,7 @@ def drivers_problems():
         
     with col2:
 
-        st.markdown("##### Top 10 Drivers with more Finish Races")
+        st.markdown("##### Top 10 Drivers - More Finish Races")
 
         df_moreDNFs = pd.read_csv("dataframes/race_counts.csv")
         df_moreDNFs = df_moreDNFs[(df_moreDNFs['Total Races'] > min_total_races) & (df_moreDNFs['Total Races'] < max_total_races)]
@@ -71,7 +71,7 @@ def drivers_problems():
         df_moreDNFs.index = range(1, len(df_moreDNFs) + 1)
         st.dataframe(df_moreDNFs)
 
-        st.markdown("##### Top 10 Drivers with more Health DNFs")
+        st.markdown("##### Top 10 Drivers - More Health DNFs")
 
         df_health = pd.read_csv("dataframes/race_counts.csv")
         df_health = df_health[(df_health['Total Races'] > min_total_races) & (df_health['Total Races'] < max_total_races)]
