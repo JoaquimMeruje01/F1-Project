@@ -3,6 +3,10 @@
 Welcome to **F1 Project**, a Data Science and Machine Learning Project, developed to analyse and predict cool and fresh information about Formula 1!  
 Here, you'll find interactive visualisations, predictive models, and fascinating statistics about F1's most iconic drivers, teams, circuits, and even races status.
 
+To explore the full web application, just click the link below:
+
+👉 [**Launch the F1 Analysis and Prediction App**]([https://your-app-link-here](https://f1-project-joaquim-meruje.streamlit.app/))
+
 ![Logo](Images/logo.jpg)
 
 ---
