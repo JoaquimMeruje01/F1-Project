@@ -120,7 +120,7 @@ def drivers_info():
           container = f"""
                          <div style='padding: 4.5px; background-color: #CE2D1E; border-radius: 6px; width: 220px; height: 210px; display: flex; flex-direction: column;'>
                          <div style='display: flex; align-items: center; justify-content: space-between;'>
-                              <h3 style='margin-top: 0.01px; font-size: 19px; line-height: 1.4;'><strong>Championships Statistics</strong></h3>
+                              <h3 style='margin-top: 0.01px; font-size: 19px; line-height: 1.4;'><strong>Championships Places</strong></h3>
                          </div>
                          <div style='font-size: 13px;'>
                               <p style='line-height: 0.9;'>• Drivers 1º Championships: {(df_drivers_championships['final_position'] == 1.0).sum()}</p>
