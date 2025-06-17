@@ -20,7 +20,7 @@ def drivers_info():
      
      st.markdown("### Drivers Results")
 
-     df_drivers = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\drivers.csv")
+     df_drivers = pd.read_csv("dataframes/drivers.csv")
      start_year = int(df_drivers['dob'].str[:4].min())
      end_year = max_year = int(df_drivers['dob'].str[:4].max()) 
 
@@ -55,13 +55,13 @@ def drivers_info():
 
      colA, colB, colC = st.columns([0.33, 0.33, 0.33])
 
-     df_drivers_championships = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\drivers_championships.csv")
+     df_drivers_championships = pd.read_csv("dataframes/drivers_championships.csv")
      df_drivers_championships = df_drivers_championships[df_drivers_championships['driverName'] == name_selected]
 
-     df_drivers_v2 = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\drivers_data.csv")
+     df_drivers_v2 = pd.read_csv("dataframes/drivers_data.csv")
      df_drivers_v2 = df_drivers_v2[df_drivers_v2['driverName'] == name_selected]
 
-     df_drivers_teams_by_season = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\drivers_teams_by_season.csv")
+     df_drivers_teams_by_season = pd.read_csv("dataframes/drivers_teams_by_season.csv")
      df_drivers_teams_by_season['drivers'] = df_drivers_teams_by_season['drivers'].apply(ast.literal_eval)
      driver_rows = df_drivers_teams_by_season[df_drivers_teams_by_season['drivers'].apply(lambda x: name_selected in x)]
      teammates = driver_rows['drivers'].apply(lambda x: [driver for driver in x if driver != name_selected]).explode().dropna().unique().tolist()
@@ -176,7 +176,7 @@ def team_info():
 
     st.markdown("### Teams Results")
 
-    df_teams = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\teams.csv")
+    df_teams = pd.read_csv(r"dataframes/teams.csv")
 
     col1, col2 = st.columns([0.5, 0.5])
 
@@ -223,8 +223,8 @@ def team_info():
 
     with colC:
 
-        df_drivers_championships = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\drivers_championships.csv")
-        df_constructors_championships = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\constructors_championships.csv")
+        df_drivers_championships = pd.read_csv("dataframes/drivers_championships.csv")
+        df_constructors_championships = pd.read_csv("dataframes/constructors_championships.csv")
 
         df_drivers_championships = create_team_dataframe(team_selected, df_drivers_championships) 
         df_constructors_championships = create_team_dataframe(team_selected, df_constructors_championships) 
@@ -273,7 +273,7 @@ def team_info():
     st.dataframe(df_drivers_championships)
 
 
-    df_graph = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\constructors_championships.csv")
+    df_graph = pd.read_csv("dataframes/constructors_championships.csv")
     df_graph = create_team_dataframe(team_selected, df_graph) 
     df_graph = df_graph[(df_graph['year'] >= start) & (df_graph['year'] <= end)] 
     df_graph = df_graph.drop(columns=['constructorId', 'positionText', 'date', 'Team Name'])  
@@ -385,7 +385,7 @@ def write_table_evolution_names_for_drivers(df, name_selected):
      last_years_list = df['last_year'].tolist()
 
      team_mates_list = []
-     drivers_teams_by_season = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1 Project\Web App\dataframes\drivers_teams_by_season.csv")
+     drivers_teams_by_season = pd.read_csv("dataframes/drivers_teams_by_season.csv")
 
      for i, (first_year, last_year, team_name) in enumerate(zip(first_years_list, last_years_list, team_names_list)):
           df_aux = drivers_teams_by_season[
