@@ -1,0 +1,39 @@
+circuitId,name,location,country,num_races,fastestLapTime,driverName
+1,Albert Park Grand Prix Circuit,Melbourne,Australia,27,1:19.813,Charles Leclerc
+69,Circuit of the Americas,Austin,USA,12,1:36.169,Charles Leclerc
+73,Baku City Circuit,Baku,Azerbaijan,8,1:43.009,Charles Leclerc
+2,Sepang International Circuit,Kuala Lumpur,Malaysia,19,1:34.080,Sebastian Vettel
+34,Circuit Paul Ricard,Le Castellet,France,18,1:32.740,Sebastian Vettel
+35,Korean International Circuit,Yeongam County,Korea,4,1:39.605,Sebastian Vettel
+68,Buddh International Circuit,Uttar Pradesh,India,3,1:27.249,Sebastian Vettel
+3,Bahrain International Circuit,Sakhir,Bahrain,21,0:55.404,George Russell
+4,Circuit de Barcelona-Catalunya,Montmeló,Spain,34,1:15.641,Giancarlo Fisichella
+5,Istanbul Park,Istanbul,Turkey,9,1:24.770,Juan Pablo Montoya
+6,Circuit de Monaco,Monte-Carlo,Monaco,70,1:12.909,Lewis Hamilton
+11,Hungaroring,Budapest,Hungary,39,1:16.627,Lewis Hamilton
+21,Autodromo Enzo e Dino Ferrari,Imola,Italy,31,1:15.484,Lewis Hamilton
+22,Suzuka Circuit,Suzuka,Japan,34,1:30.983,Lewis Hamilton
+39,Circuit Park Zandvoort,Zandvoort,Netherlands,34,1:11.097,Lewis Hamilton
+71,Sochi Autodrom,Sochi,Russia,8,1:35.761,Lewis Hamilton
+75,Autódromo Internacional do Algarve,Portimão,Portugal,2,1:18.750,Lewis Hamilton
+76,Autodromo Internazionale del Mugello,Mugello,Italy,1,1:18.833,Lewis Hamilton
+77,Jeddah Corniche Circuit,Jeddah,Saudi Arabia,4,1:30.734,Lewis Hamilton
+7,Circuit Gilles Villeneuve,Montreal,Canada,43,1:13.078,Valtteri Bottas
+18,Autódromo José Carlos Pace,São Paulo,Brazil,41,1:10.540,Valtteri Bottas
+32,Autódromo Hermanos Rodríguez,Mexico City,Mexico,24,1:17.774,Valtteri Bottas
+8,Circuit de Nevers Magny-Cours,Magny Cours,France,18,1:15.377,Michael Schumacher
+9,Silverstone Circuit,Silverstone,UK,59,1:18.739,Michael Schumacher
+17,Shanghai International Circuit,Shanghai,China,17,1:32.238,Michael Schumacher
+10,Hockenheimring,Hockenheim,Germany,37,1:13.780,Kimi Räikkönen
+12,Valencia Street Circuit,Valencia,Spain,5,1:38.683,Timo Glock
+13,Circuit de Spa-Francorchamps,Spa,Belgium,57,1:44.701,Sergio Pérez
+14,Autodromo Nazionale di Monza,Monza,Italy,74,1:21.046,Rubens Barrichello
+19,Indianapolis Motor Speedway,Indianapolis,USA,19,1:10.399,Rubens Barrichello
+15,Marina Bay Street Circuit,Marina Bay,Singapore,15,1:34.486,Daniel Ricciardo
+16,Fuji Speedway,Oyama,Japan,4,1:18.426,Felipe Massa
+20,Nürburgring,Nürburg,Germany,41,1:28.139,Max Verstappen
+79,Miami International Autodrome,Miami,USA,3,1:29.708,Max Verstappen
+24,Yas Marina Circuit,Abu Dhabi,UAE,16,1:25.637,Kevin Magnussen
+70,Red Bull Ring,Spielberg,Austria,38,1:05.619,Carlos Sainz
+78,Losail International Circuit,Al Daayen,Qatar,3,1:22.384,Lando Norris
+80,Las Vegas Strip Street Circuit,Las Vegas,United States,2,1:34.876,Lando Norris
