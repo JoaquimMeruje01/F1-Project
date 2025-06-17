@@ -14,7 +14,7 @@ def app():
               information about Formula 1! Here, you'll find interactive visualisations, predictive models and fascinating statistics \
               about F1's most iconic drivers, teams, circuits and even race statuses.")
     
-    image = Image.open("Images\logo.jpg")
+    image = Image.open("Images/logo.jpg")
     st.image(image, use_column_width=True, width=200)
 
     st.write("The main goals of this project include analyse historical data from races, classifications from different drivers and seasons;\
