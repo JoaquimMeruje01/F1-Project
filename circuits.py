@@ -55,7 +55,7 @@ def drivers_teams_performance_circuits():
 
      st.markdown("### Drivers and Teams Performance in Circuits")
 
-     results_by_circuit = pd.read_csv("dataframes/results_by_circuit.csv ") 
+     results_by_circuit = pd.read_csv("dataframes/results_by_circuit.csv") 
      col1, col2 = st.columns([0.4, 0.4])
 
      with col1:
