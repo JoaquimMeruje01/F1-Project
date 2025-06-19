@@ -22,7 +22,7 @@ def prediction_winner_races():
      
      st.markdown("### Race Podium Predictions")
 
-     podiums = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1-Project-Original\dataframes\predictions_podiums.csv")
+     podiums = pd.read_csv("dataframes/predictions_podiums.csv")
 
      col1, col2 = st.columns([0.5, 0.5])
 
@@ -61,7 +61,7 @@ def prediction_championship_rankings():
      
      st.markdown("### Championship Rankings Predictions")
 
-     rankings_drivers = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1-Project-Original\dataframes\drivers_championships_prediction.csv")
+     rankings_drivers = pd.read_csv("dataframes/drivers_championships_prediction.csv")
 
      col1, col2 = st.columns([0.5, 0.5])
      
@@ -86,7 +86,7 @@ def prediction_championship_rankings():
           with colB:
                st.markdown("#### 🎯 Real Championship")   
 
-               drivers_champ =pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1-Project-Original\dataframes\drivers_championships.csv") 
+               drivers_champ =pd.read_csv("dataframes/drivers_championships.csv") 
                drivers_champ = drivers_champ[drivers_champ['year'] == year_selected]      
                drivers_champ = drivers_champ.drop(columns=['driverId', 'race_entries', 'fastestLapSpeed', 'pole_position', 'podium', 'victory', 'final_position'])
                drivers_champ.rename(columns={'points': 'Points'}, inplace=True)
@@ -108,7 +108,7 @@ def prediction_championship_rankings():
           with colB:
                st.markdown("#### 🎯 Real Championship")    
 
-               teams_champ = pd.read_csv(r"C:\Users\Joaquim Meruje\OneDrive\Documentos\F1-Project-Original\dataframes\constructors_championships.csv")         
+               teams_champ = pd.read_csv("dataframes/constructors_championships.csv")         
                teams_champ = teams_champ[teams_champ['year'] == year_selected] 
                teams_champ = teams_champ.drop(columns=['wins', 'constructorId', 'date', 'positionText', 'position', 'year'])
                teams_champ.rename(columns={'points': 'Points'}, inplace=True)
