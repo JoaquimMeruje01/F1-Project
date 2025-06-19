@@ -33,7 +33,7 @@ def app():
              as Numpy, Pandas, Seaborn, Plotly and Scikit-learn. Data was collected from real-world datasets in Kaggle\
              and from wikipedia pages.")
     
-    st.write("You can find more information about the project and respective code in the GitHub repository: ")
+    st.write("You can find more information about the project and respective code in the GitHub repository: https://github.com/JoaquimMeruje01/F1-Project.git")
 
     st.write("Start the engine, open the charts and enjoy the science behind the speed!")
    
